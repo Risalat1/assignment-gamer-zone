@@ -181,57 +181,15 @@ height: 821px;
 flex-shrink: 0;
 background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
-.careers{
+
+.links{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.career-description{
-    padding: 120px 0px 240px 120px;
-}
-.career-description h2{
-    color: #FFF;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-}
-.career-description p{
-    width: 680px;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-}
-.members{
-    display: flex;
-    color: #FFF;
-font-size: 20px;
-font-weight: 600;
-line-height: 40px;
-}
-.white-btn{
-    display: inline-flex;
-padding: 21px 40px;
-align-items: flex-start;
-gap: 10px;
-border-radius: 48px;
-background: #FFF;
-font-size: 20px;
-font-weight: 600;
-color: #FF42A5;
-border: 0;
-cursor: pointer;
-}
-.link-5{
-    display: flex;
-    justify-content: center;
-   padding: 50px 150px;
-}
-.link-4{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 200px 20px;
+  gap: 25px;
 }
 .link-content{
     display: flex;
@@ -298,43 +256,72 @@ font-weight: 700;
     nav{
         flex-direction: column;
         margin-left: 0;
+        padding: 0;
     }
     .nav-logo{
         padding: auto;
     }
     .nav-container{
         flex-direction: column;
-        padding: 0 200px;
+        padding: 0 80px;
     }
     .goat{
         flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .gt{
+        margin: 5px;
+        font-size: 60px;
+    }
+    .goat-img{
+        padding: 0;
+    }
+    .goat-img img{
+        width: 100%;
+    }
+    .btn-pink{
+        margin-bottom: 5px;
     }
     .section-description1{
-        margin: 24px 100px;
+        margin: 24px 50px;
         padding: 10px 20px;
+        text-align: center;
     }
     .gamer{
         flex-direction: column;
         padding: 20px 10px;
     }
-    .game-pic img{
-        width: 80%;
+    .gamer-pic img{
+        width: 100%;
     }
+    
+
     .instant-game{
         flex-direction: column;
         margin-left: 160px;
         margin: 0;
         gap: 5px;
     }
-    .game-img{
-        width: 100%;
+    .game-img img{
+        width: 80%;
+        padding-left: 30px;
     }
     .game-img .relative{
-        width: 80%;
+        width: 50%;
+        position: relative;
+    bottom: 150px;
+    right: 10px;
     }
-    .game-description{
+    .gamer-description{
         text-align: center;
         padding-bottom: 0;
+    }
+    .game-description{
+        text-align: left;
+        padding-bottom: 50px;
+    }
+    .gamer p{
+        width: auto;
     }
     .careers{
         flex-direction: column;
@@ -343,18 +330,100 @@ font-weight: 700;
     padding: 10px;
     width: 100%;
     }
-    
+    .links{
+        display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   margin: 0 10px;
+   padding: 5px 10px;
+   gap: 10px;
+   width: auto;
+    }
+    .link-content{
+        width: 100px;
+        height: 30px;
+        font-size: 0.5rem;
+    }
+    .link-content img{
+height: 30px;
+width: 30px;
+    }
+    footer{
+        margin: 0;
+        padding: 20px;
+    }
+    .logo-img{
+        width: 100px;
+        height: auto;
+    }
+    .footer-logo h3{
+        font-size: 2rem;
+    }
+    .footer-info{
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .socials{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .policy{
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
    
 }
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 576px) and (max-width: 1000px) {
     nav{
-        flex-direction: column;
+       padding: 0 10px;
     }
     .goat{
         flex-direction: column;
     }
+    .goat-img{
+        padding: 0;
+    }
+    .goat-img img{
+        width: 100%;
+    }
+    .game-description{
+        width: 50%;
+    }
+    .gamer{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .gamer-pic img{
+        width: 100%;
+    }
+    .gamer-description{
+        text-align: left;}
+        .instant-game{
+            margin: 0;
+        }
+        .game-description{
+            padding: 0;
+        }
+        .game-description h2{
+            font-size: 2.5rem;
+        }
+        .game-img{
+padding-top: 100px;
+        }
+        
+        .game-img img{
+            width: 100%;
+            
+        }
+        .game-img .relative{
+            width: 60%;
+        }
     .section-description1{
         margin: 24px 50px;
         padding: 50px 100px;
+        align-items: center;
     }
 }
