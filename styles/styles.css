@@ -38,6 +38,7 @@ color: #3C354F;
     border-radius: 8px;
 background: rgba(11, 2, 35, 0.10);
 padding: 24px 17px;justify-content: space-around;
+text-align: center;
 }
 .play{
     color: #0B0223;
@@ -174,6 +175,31 @@ line-height: 30px;
     position: relative;
     bottom: 233px;
     right: 150px;
+}
+.funny-video{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    gap: 24px;
+    padding: 48px 240px 0 240px;
+}
+
+.card-contents img{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opasity 0.4s ease-in-out;
+    background-color: black;
+}
+.card-contents img:hover .overlay{
+    opacity: 0.8;
 }
 .careers{
     width: 1920px;
@@ -323,6 +349,10 @@ font-weight: 700;
     .gamer p{
         width: auto;
     }
+    .cards{
+        flex-direction: column;
+        padding: 0 5px;
+    }
     .careers{
         flex-direction: column;
     }
@@ -390,6 +420,10 @@ width: 30px;
     }
     .game-description{
         width: 50%;
+    }
+    .cards{
+        flex-direction: column;
+        padding: 0 5px;
     }
     .gamer{
         flex-direction: column;
